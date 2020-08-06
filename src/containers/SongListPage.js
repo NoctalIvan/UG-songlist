@@ -3,8 +3,10 @@ import songListData from './../data/songList.json'
 
 import Container from '@material-ui/core/Container';
 import Pagination from '@material-ui/lab/Pagination';
+import Grid from '@material-ui/core/Grid';
 import SongList from '../components/SongList'
 import SearchBar from '../components/SearchBar'
+import SortingSelect from '../components/SortingSelect'
 
 import normalizeStr from '../lib/normalizeString'
 
@@ -27,8 +29,8 @@ class SongListPage extends Component {
             songListData: JSON.parse(JSON.stringify(songListData)),
             filterString: '',
             sort: {
-                field: 'artist',
-                direction: -1
+                field: 'title',
+                direction: 1
             },
             page: 1
         }
@@ -49,6 +51,14 @@ class SongListPage extends Component {
         })
     };
 
+    onSortChange(value) {
+        this.setState({
+            ...this.state,
+            sort: value,
+            page: 1
+        })
+    }
+
     render() {
         const filterSongListData = this.state.songListData
             .filter((song) => songFilter(song, this.state.filterString))
@@ -56,10 +66,16 @@ class SongListPage extends Component {
         
         const paginationPages = Math.floor(sortedSongListData.length / 20 - 1)
         const pageSongListData = paginate(sortedSongListData, this.state.page - 1)
-        console.log({page: this.state.page})
         
         return <Container>
-            <SearchBar onInput={this.onSearchBarInput.bind(this)}/>
+            <Grid container spacing={1}>
+                <Grid item xs={8}>
+                    <SearchBar onInput={this.onSearchBarInput.bind(this)}/>
+                </Grid>
+                <Grid item xs={4}>
+                    <SortingSelect value={this.state.sort} onChange={this.onSortChange.bind(this)}/>
+                </Grid>
+            </Grid>
             <SongList songListData={pageSongListData}/>
             <Pagination 
                 size="large"
