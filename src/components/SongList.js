@@ -16,10 +16,10 @@ class SongList extends Component {
           this.props.songListData.map(songData => (
             <ListItem 
               key={songData.title + '_' + songData.artist + '_' + songData.version}
-              style={{'padding-left': '2px', 'padding-right': 0}}>
+              style={{'paddingLeft': '2px', 'paddingRight': 0}}>
               <ListItemText primary={songData.title} secondary={songData.artist} />
               {songData.link && (<ListItemSecondaryAction onClick={() => window.open(songData.link)}>
-                <IconButton edge="end" aria-label="link" style={{'padding-right': 0}}>
+                <IconButton edge="end" aria-label="link" style={{'paddingRight': 0}}>
                   <LinkIcon />
                 </IconButton>
               </ListItemSecondaryAction>) }

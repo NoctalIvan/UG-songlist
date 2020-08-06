@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TextField from '@material-ui/core/TextField';
 import { withStyles } from '@material-ui/core/styles';
+import normalizeStr from '../lib/normalizeString'
 
 class SearchBar extends Component {
     
@@ -14,7 +15,7 @@ class SearchBar extends Component {
                 fullWidth 
                 label="Search..." 
                 variant="outlined"
-                onInput={(event) => this.props.onInput(event.target.value.toLowerCase())}/>
+                onInput={(event) => this.props.onInput(normalizeStr(event.target.value))}/>
         </div>
     }
 }

@@ -6,8 +6,10 @@ import Pagination from '@material-ui/lab/Pagination';
 import SongList from '../components/SongList'
 import SearchBar from '../components/SearchBar'
 
+import normalizeStr from '../lib/normalizeString'
+
 const songFilter = (song, filter) => {
-    return song.title.toLowerCase().includes(filter) || song.artist.toLowerCase().includes(filter)
+    return normalizeStr(song.title).includes(filter) || normalizeStr(song.artist).toLowerCase().includes(filter)
 }
 
 const songSort = (songs, sort) => {
@@ -28,7 +30,7 @@ class SongListPage extends Component {
                 field: 'artist',
                 direction: -1
             },
-            page: 0
+            page: 1
         }
     }
     
@@ -36,7 +38,7 @@ class SongListPage extends Component {
         this.setState({
             ...this.state,
             filterString: input,
-            page: 0
+            page: 1
         })
     };
 
@@ -52,19 +54,21 @@ class SongListPage extends Component {
             .filter((song) => songFilter(song, this.state.filterString))
         const sortedSongListData = songSort(filterSongListData, this.state.sort)
         
-        const paginationPages = Math.floor(sortedSongListData.length / 20)
-        const pageSongListData = paginate(sortedSongListData, this.state.page)
+        const paginationPages = Math.floor(sortedSongListData.length / 20 - 1)
+        const pageSongListData = paginate(sortedSongListData, this.state.page - 1)
+        console.log({page: this.state.page})
         
         return <Container>
             <SearchBar onInput={this.onSearchBarInput.bind(this)}/>
             <SongList songListData={pageSongListData}/>
             <Pagination 
                 size="large"
-                style={{'margin-bottom': '8px'}}
-                hideNextButton="false" 
-                hidePrevButton="false" 
+                style={{'marginBottom': '8px'}}
+                hideNextButton={true} 
+                hidePrevButton={true} 
                 count={paginationPages} 
-                onChange={this.onPaginationChange.bind(this)} />
+                onChange={this.onPaginationChange.bind(this)} 
+                page={this.state.page}/>
         </Container>
     }
   }
