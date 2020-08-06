@@ -16,6 +16,7 @@ class SongList extends Component {
           this.props.songListData.map(songData => (
             <ListItem 
               key={songData.title + '_' + songData.artist + '_' + songData.version}
+              divider={true}
               style={{'paddingLeft': '2px', 'paddingRight': 0}}>
               <ListItemText primary={songData.title} secondary={songData.artist} />
               {songData.link && (<ListItemSecondaryAction onClick={() => window.open(songData.link)}>
