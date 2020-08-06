@@ -39,7 +39,7 @@ class SortingSelect extends Component {
                 <Select
                     value={propsValue}
                     onChange={(event) => this.props.onChange(labelToValue(event.target.value))}
-                    IconComponent={"null"}>
+                    IconComponent={undefined}>
                     <MenuItem value={"title_up"}>Title ▲</MenuItem>
                     <MenuItem value={"title_down"}>Title ▼</MenuItem>
                     <MenuItem value={"artist_up"}>Artist ▲</MenuItem>

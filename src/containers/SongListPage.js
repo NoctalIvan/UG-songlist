@@ -49,6 +49,7 @@ class SongListPage extends Component {
             ...this.state,
             page
         })
+        window.scrollTo({top: 0, behavior: 'smooth'});
     };
 
     onSortChange(value) {
@@ -66,6 +67,7 @@ class SongListPage extends Component {
         
         const paginationPages = Math.floor(sortedSongListData.length / 20 - 1)
         const pageSongListData = paginate(sortedSongListData, this.state.page - 1)
+        // const pageSongListData = sortedSongListData
         
         return <Container>
             <Grid container spacing={1}>
