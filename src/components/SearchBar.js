@@ -11,7 +11,7 @@ class SearchBar extends Component {
         return <div className={classes.SearchBar}>
             <TextField 
                 id="searchBar" 
-                color="secondary" 
+                color="primary" 
                 fullWidth 
                 label="Search..." 
                 variant="outlined"

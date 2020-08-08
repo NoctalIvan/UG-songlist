@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import songListData from './../data/songList.json'
+import typeData from '../data/artistTypes.json'
 
 import Container from '@material-ui/core/Container';
 import Pagination from '@material-ui/lab/Pagination';
@@ -7,8 +8,14 @@ import Grid from '@material-ui/core/Grid';
 import SongList from '../components/SongList'
 import SearchBar from '../components/SearchBar'
 import SortingSelect from '../components/SortingSelect'
+import GenreSelect from '../components/GenreSelect'
 
 import normalizeStr from '../lib/normalizeString'
+
+// fuse songlistData
+songListData.forEach(song => {
+    song.genre = typeData.find(t => t.artist == song.artist).type
+})
 
 const songFilter = (song, filter) => {
     return normalizeStr(song.title).includes(filter) || normalizeStr(song.artist).toLowerCase().includes(filter)
@@ -28,6 +35,11 @@ class SongListPage extends Component {
         this.state = {
             songListData: JSON.parse(JSON.stringify(songListData)),
             filterString: '',
+            genres: {
+                rock: true,
+                pop: true,
+                chill: true
+            },
             sort: {
                 field: 'title',
                 direction: 1
@@ -49,7 +61,10 @@ class SongListPage extends Component {
             ...this.state,
             page
         })
-        window.scrollTo({top: 0, behavior: 'smooth'});
+        window.scrollTo({
+            top: document.getElementsByClassName('SongList')[0].offsetTop, 
+            behavior: 'smooth'
+        });
     };
 
     onSortChange(value) {
@@ -60,9 +75,18 @@ class SongListPage extends Component {
         })
     }
 
+    onGenreChange(value) {
+        this.setState({
+            ...this.state,
+            genres: value,
+            page: 1
+        })
+    }
+
     render() {
         const filterSongListData = this.state.songListData
             .filter((song) => songFilter(song, this.state.filterString))
+            .filter((song) => this.state.genres[song.genre])
         const sortedSongListData = songSort(filterSongListData, this.state.sort)
         
         const paginationPages = Math.floor(sortedSongListData.length / 20 - 1)
@@ -78,6 +102,7 @@ class SongListPage extends Component {
                     <SortingSelect value={this.state.sort} onChange={this.onSortChange.bind(this)}/>
                 </Grid>
             </Grid>
+            <GenreSelect onChange={this.onGenreChange.bind(this)} />
             <SongList songListData={pageSongListData}/>
             <Pagination 
                 size="large"

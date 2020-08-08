@@ -5,7 +5,6 @@ import MenuItem from "@material-ui/core/MenuItem";
 import FormControl from "@material-ui/core/FormControl";
 
 const labelToValue = (label) => {
-    console.log(label)
   switch (label) {
     case "artist_up":
       return { field: "artist", direction: 1 };
