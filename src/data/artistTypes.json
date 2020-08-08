@@ -1,0 +1,622 @@
+[
+  {
+    "artist": "Adele",
+    "type": "pop"
+  },
+  {
+    "artist": "Alt-J",
+    "type": "chill"
+  },
+  {
+    "artist": "Angus & Julia Stone",
+    "type": "chill"
+  },
+  {
+    "artist": "Anna Kendrick",
+    "type": "pop"
+  },
+  {
+    "artist": "Arctic Monkeys",
+    "type": "chill"
+  },
+  {
+    "artist": "Ava Max",
+    "type": "chill"
+  },
+  {
+    "artist": "Avicii",
+    "type": "pop"
+  },
+  {
+    "artist": "Avril Lavigne",
+    "type": "pop"
+  },
+  {
+    "artist": "Backstreet Boys",
+    "type": "pop"
+  },
+  {
+    "artist": "Ben E. King",
+    "type": "pop"
+  },
+  {
+    "artist": "Bill Withers",
+    "type": "pop"
+  },
+  {
+    "artist": "Birdy",
+    "type": "pop"
+  },
+  {
+    "artist": "Bob Dylan",
+    "type": "pop"
+  },
+  {
+    "artist": "Bob Marley",
+    "type": "chill"
+  },
+  {
+    "artist": "Bright Eyes",
+    "type": "chill"
+  },
+  {
+    "artist": "Britney Spears",
+    "type": "pop"
+  },
+  {
+    "artist": "Bruce Springsteen",
+    "type": "rock"
+  },
+  {
+    "artist": "Bruno Mars",
+    "type": "pop"
+  },
+  {
+    "artist": "Cage the Elephant",
+    "type": "rock"
+  },
+  {
+    "artist": "Camila Cabello",
+    "type": "pop"
+  },
+  {
+    "artist": "Cascada",
+    "type": "rock"
+  },
+  {
+    "artist": "Cecile Corbel",
+    "type": "chill"
+  },
+  {
+    "artist": "Celine Dion",
+    "type": "pop"
+  },
+  {
+    "artist": "Chris Isaak",
+    "type": "pop"
+  },
+  {
+    "artist": "Coldplay",
+    "type": "rock"
+  },
+  {
+    "artist": "Creedence Clearwater Revival",
+    "type": "rock"
+  },
+  {
+    "artist": "Daniel Powter",
+    "type": "pop"
+  },
+  {
+    "artist": "David Bowie",
+    "type": "rock"
+  },
+  {
+    "artist": "David Guetta",
+    "type": "pop"
+  },
+  {
+    "artist": "Dido",
+    "type": "chill"
+  },
+  {
+    "artist": "Dire Straits",
+    "type": "rock"
+  },
+  {
+    "artist": "Dua Lipa",
+    "type": "pop"
+  },
+  {
+    "artist": "Eagle-Eye Cherry",
+    "type": "rock"
+  },
+  {
+    "artist": "Eagles",
+    "type": "rock"
+  },
+  {
+    "artist": "Ed Sheeran",
+    "type": "pop"
+  },
+  {
+    "artist": "Edie Brickell & New Bohemians",
+    "type": "chill"
+  },
+  {
+    "artist": "Elvis Presley",
+    "type": "rock"
+  },
+  {
+    "artist": "Eurythmics",
+    "type": "rock"
+  },
+  {
+    "artist": "Everlast",
+    "type": "rock"
+  },
+  {
+    "artist": "Family of the Year",
+    "type": "chill"
+  },
+  {
+    "artist": "Five Finger Death Punch",
+    "type": "rock"
+  },
+  {
+    "artist": "Flunk",
+    "type": "chill"
+  },
+  {
+    "artist": "Foo Fighters",
+    "type": "rock"
+  },
+  {
+    "artist": "Fool's Garden",
+    "type": "pop"
+  },
+  {
+    "artist": "Foster the People",
+    "type": "pop"
+  },
+  {
+    "artist": "France Gall",
+    "type": "pop"
+  },
+  {
+    "artist": "Frank Sinatra",
+    "type": "pop"
+  },
+  {
+    "artist": "Garou",
+    "type": "pop"
+  },
+  {
+    "artist": "Gary Jules",
+    "type": "pop"
+  },
+  {
+    "artist": "George Ezra",
+    "type": "pop"
+  },
+  {
+    "artist": "George Michael",
+    "type": "chill"
+  },
+  {
+    "artist": "Georges Brassens",
+    "type": "pop"
+  },
+  {
+    "artist": "Gloria Gaynor",
+    "type": "pop"
+  },
+  {
+    "artist": "Gnarls Barkley",
+    "type": "pop"
+  },
+  {
+    "artist": "Gorillaz",
+    "type": "rock"
+  },
+  {
+    "artist": "Gotye",
+    "type": "chill"
+  },
+  {
+    "artist": "Green Day",
+    "type": "rock"
+  },
+  {
+    "artist": "Guns N' Roses",
+    "type": "rock"
+  },
+  {
+    "artist": "Hozier",
+    "type": "rock"
+  },
+  {
+    "artist": "Icon For Hire",
+    "type": "rock"
+  },
+  {
+    "artist": "Imagine Dragons",
+    "type": "rock"
+  },
+  {
+    "artist": "In This Moment",
+    "type": "rock"
+  },
+  {
+    "artist": "Incubus",
+    "type": "rock"
+  },
+  {
+    "artist": "Jason Mraz",
+    "type": "pop"
+  },
+  {
+    "artist": "Jean-Jacques Goldman",
+    "type": "pop"
+  },
+  {
+    "artist": "Jeff Buckley",
+    "type": "pop"
+  },
+  {
+    "artist": "Joe Dassin",
+    "type": "pop"
+  },
+  {
+    "artist": "John Legend",
+    "type": "pop"
+  },
+  {
+    "artist": "John Rzeznik",
+    "type": "pop"
+  },
+  {
+    "artist": "Johnny Cash",
+    "type": "rock"
+  },
+  {
+    "artist": "Jonas Blue",
+    "type": "pop"
+  },
+  {
+    "artist": "José González",
+    "type": "chill"
+  },
+  {
+    "artist": "Joseph Vincent",
+    "type": "pop"
+  },
+  {
+    "artist": "JP Cooper",
+    "type": "chill"
+  },
+  {
+    "artist": "Justin Bieber",
+    "type": "pop"
+  },
+  {
+    "artist": "Kaleo",
+    "type": "rock"
+  },
+  {
+    "artist": "Keira Knightley",
+    "type": "chill"
+  },
+  {
+    "artist": "Lenka",
+    "type": "pop"
+  },
+  {
+    "artist": "Linkin Park",
+    "type": "rock"
+  },
+  {
+    "artist": "Local Natives",
+    "type": "chill"
+  },
+  {
+    "artist": "Lorde",
+    "type": "chill"
+  },
+  {
+    "artist": "Luis Fonsi",
+    "type": "pop"
+  },
+  {
+    "artist": "Lukas Graham",
+    "type": "pop"
+  },
+  {
+    "artist": "Lynyrd Skynyrd",
+    "type": "rock"
+  },
+  {
+    "artist": "Måns Zelmerlöw",
+    "type": "pop"
+  },
+  {
+    "artist": "Mark Ronson",
+    "type": "pop"
+  },
+  {
+    "artist": "Maroon 5",
+    "type": "pop"
+  },
+  {
+    "artist": "Metallica",
+    "type": "rock"
+  },
+  {
+    "artist": "Michael Jackson",
+    "type": "pop"
+  },
+  {
+    "artist": "Miley Cyrus",
+    "type": "pop"
+  },
+  {
+    "artist": "Milky Chance",
+    "type": "chill"
+  },
+  {
+    "artist": "Misc Cartoons",
+    "type": "pop"
+  },
+  {
+    "artist": "Misc Soundtrack",
+    "type": "pop"
+  },
+  {
+    "artist": "Misc Television",
+    "type": "pop"
+  },
+  {
+    "artist": "Monty Python",
+    "type": "pop"
+  },
+  {
+    "artist": "Neil Young",
+    "type": "pop"
+  },
+  {
+    "artist": "New Order",
+    "type": "chill"
+  },
+  {
+    "artist": "Nickelback",
+    "type": "rock"
+  },
+  {
+    "artist": "Nightwish",
+    "type": "rock"
+  },
+  {
+    "artist": "Nirvana",
+    "type": "rock"
+  },
+  {
+    "artist": "No Doubt",
+    "type": "rock"
+  },
+  {
+    "artist": "Oasis",
+    "type": "rock"
+  },
+  {
+    "artist": "Of Monsters and Men",
+    "type": "chill"
+  },
+  {
+    "artist": "OneRepublic",
+    "type": "pop"
+  },
+  {
+    "artist": "Papa Roach",
+    "type": "rock"
+  },
+  {
+    "artist": "Passenger",
+    "type": "chill"
+  },
+  {
+    "artist": "Patti Smith",
+    "type": "pop"
+  },
+  {
+    "artist": "Phil Collins",
+    "type": "rock"
+  },
+  {
+    "artist": "Pink Floyd",
+    "type": "chill"
+  },
+  {
+    "artist": "Pink Martini",
+    "type": "pop"
+  },
+  {
+    "artist": "Plain White T's",
+    "type": "pop"
+  },
+  {
+    "artist": "Poets of the Fall",
+    "type": "rock"
+  },
+  {
+    "artist": "R.E.M.",
+    "type": "rock"
+  },
+  {
+    "artist": "Radiohead",
+    "type": "chill"
+  },
+  {
+    "artist": "Rag'n'Bone Man",
+    "type": "rock"
+  },
+  {
+    "artist": "Ray Charles",
+    "type": "rock"
+  },
+  {
+    "artist": "Red Hot Chili Peppers",
+    "type": "rock"
+  },
+  {
+    "artist": "Renan Luce",
+    "type": "pop"
+  },
+  {
+    "artist": "Renaud",
+    "type": "pop"
+  },
+  {
+    "artist": "Rise Against",
+    "type": "pop"
+  },
+  {
+    "artist": "Royal Blood",
+    "type": "rock"
+  },
+  {
+    "artist": "Sam Smith",
+    "type": "pop"
+  },
+  {
+    "artist": "Shaka Ponk",
+    "type": "rock"
+  },
+  {
+    "artist": "Shawn Mendes",
+    "type": "pop"
+  },
+  {
+    "artist": "Simon & Garfunkel",
+    "type": "chill"
+  },
+  {
+    "artist": "Simple Minds",
+    "type": "rock"
+  },
+  {
+    "artist": "Soft Cell",
+    "type": "rock"
+  },
+  {
+    "artist": "Sonata Arctica",
+    "type": "rock"
+  },
+  {
+    "artist": "Soul Asylum",
+    "type": "rock"
+  },
+  {
+    "artist": "Sparklehorse",
+    "type": "chill"
+  },
+  {
+    "artist": "Starset",
+    "type": "rock"
+  },
+  {
+    "artist": "Sting",
+    "type": "rock"
+  },
+  {
+    "artist": "Survivor",
+    "type": "rock"
+  },
+  {
+    "artist": "Swedish House Mafia",
+    "type": "pop"
+  },
+  {
+    "artist": "Syd Matters",
+    "type": "chill"
+  },
+  {
+    "artist": "System of a Down",
+    "type": "pop"
+  },
+  {
+    "artist": "The Animals",
+    "type": "rock"
+  },
+  {
+    "artist": "The Beatles",
+    "type": "rock"
+  },
+  {
+    "artist": "The Chainsmokers",
+    "type": "pop"
+  },
+  {
+    "artist": "The Connells",
+    "type": "pop"
+  },
+  {
+    "artist": "The Cranberries",
+    "type": "rock"
+  },
+  {
+    "artist": "The Fray",
+    "type": "rock"
+  },
+  {
+    "artist": "The Lumineers",
+    "type": "chill"
+  },
+  {
+    "artist": "The Police",
+    "type": "rock"
+  },
+  {
+    "artist": "The Pretty Reckless",
+    "type": "rock"
+  },
+  {
+    "artist": "The Who",
+    "type": "rock"
+  },
+  {
+    "artist": "Theory of a Deadman",
+    "type": "rock"
+  },
+  {
+    "artist": "Tom Walker",
+    "type": "chill"
+  },
+  {
+    "artist": "Tones And I",
+    "type": "pop"
+  },
+  {
+    "artist": "Toto",
+    "type": "pop"
+  },
+  {
+    "artist": "Tue Loup",
+    "type": "pop"
+  },
+  {
+    "artist": "U2",
+    "type": "rock"
+  },
+  {
+    "artist": "Vance Joy",
+    "type": "pop"
+  },
+  {
+    "artist": "Wham!",
+    "type": "pop"
+  },
+  {
+    "artist": "Zaz",
+    "type": "pop"
+  }
+]
