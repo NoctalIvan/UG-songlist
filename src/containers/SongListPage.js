@@ -10,24 +10,16 @@ import SearchBar from '../components/SearchBar'
 import SortingSelect from '../components/SortingSelect'
 import GenreSelect from '../components/GenreSelect'
 
-import normalizeStr from '../lib/normalizeString'
+import {
+    songFilter,
+    songSort,
+    paginate
+} from '../lib/filterSongs'
 
 // fuse songlistData
 songListData.forEach(song => {
-    song.genre = typeData.find(t => t.artist == song.artist).type
+    song.genre = typeData.find(t => t.artist === song.artist).type
 })
-
-const songFilter = (song, filter) => {
-    return normalizeStr(song.title).includes(filter) || normalizeStr(song.artist).toLowerCase().includes(filter)
-}
-
-const songSort = (songs, sort) => {
-    return songs.slice().sort((a, b) => sort.direction * (a[sort.field].localeCompare(b[sort.field])))
-}
-
-const paginate = (songs, page) => {
-    return songs.slice(page*20, page*20 + 20)
-}
 
 class SongListPage extends Component {
     constructor() {
@@ -91,7 +83,6 @@ class SongListPage extends Component {
         
         const paginationPages = Math.floor(sortedSongListData.length / 20 - 1)
         const pageSongListData = paginate(sortedSongListData, this.state.page - 1)
-        // const pageSongListData = sortedSongListData
         
         return <Container>
             <Grid container spacing={1}>
