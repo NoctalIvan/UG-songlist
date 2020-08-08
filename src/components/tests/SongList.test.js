@@ -21,10 +21,10 @@ test('renders with songs', async () => {
     const link = song.nextSibling.firstChild
     expect(link).toHaveClass('MuiButtonBase-root')
 
-    let wasOpened = false
-    window.open = () => {
-        wasOpened = true
+    let url = null
+    window.open = (value) => {
+        url = value
     }
     fireEvent.click(link)
-    expect(wasOpened).toBe(true)
+    expect(url).toBe('lk')
 });
