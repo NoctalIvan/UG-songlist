@@ -81,7 +81,7 @@ class SongListPage extends Component {
             .filter((song) => this.state.genres[song.genre])
         const sortedSongListData = songSort(filterSongListData, this.state.sort)
         
-        const paginationPages = Math.floor(sortedSongListData.length / 20 - 1)
+        const paginationPages = Math.floor((sortedSongListData.length - 1) / 20)
         const pageSongListData = paginate(sortedSongListData, this.state.page - 1)
         
         return <Container>
