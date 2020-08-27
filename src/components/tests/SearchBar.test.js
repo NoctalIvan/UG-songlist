@@ -14,10 +14,10 @@ test('calls prop on update', async () => {
     const OnInput = (value) => {
         lastOnInputValue = value
     }
-    const searchBar = await render(<SearchBar onInput={OnInput}/>);
+    const {container} = await render(<SearchBar onInput={OnInput}/>);
     expect(lastOnInputValue).toBe(null)
 
-    const barElement = await searchBar.container.getElementsByClassName('MuiInputBase-input')[0]
+    const barElement = await container.getElementsByClassName('MuiInputBase-input')[0]
     fireEvent.input(barElement, {
         target: {
             value: 'azer'

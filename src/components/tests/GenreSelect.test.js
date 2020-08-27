@@ -21,7 +21,7 @@ test('click one button disables it and calls props', async () => {
     expect(lastOnChangeValue).toBe(null)
 
     const buttons = genreSelect.container.children[0].children
-    fireEvent.click(buttons[0])
+    fireEvent.click(buttons[0]) 
 
     expect(buttons[0]).not.toHaveClass('MuiButton-contained')
     expect(buttons[0]).toHaveClass('MuiButton-outlined')
