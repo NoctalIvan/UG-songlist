@@ -28,7 +28,7 @@ class SongList extends Component {
           ))
         }
       </List>) : (
-        <p>I don't have this song, sorry... :(</p>
+        <p>I don't have this song/artist, sorry <span role="img" aria-label="disappointed">😞</span></p>
       )}
     </div>
   }
