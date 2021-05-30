@@ -4990,7 +4990,8 @@
       "tab_type": "favorite",
       "shared": false,
       "version": 1,
-      "part": ""
+      "part": "",
+      "hidden": true
   },
   {
       "date": 1582632319,
