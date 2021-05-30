@@ -16,7 +16,7 @@ class SongListPage extends Component {
     constructor() {
         super();
         this.state = {
-            songListData: JSON.parse(JSON.stringify(songListData)),
+            songListData: JSON.parse(JSON.stringify(songListData)).filter(s => !s.hidden),
             filterString: '',
             genres: {
                 rock: true,
