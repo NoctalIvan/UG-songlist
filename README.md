@@ -3,6 +3,8 @@
 This is an online songList to share with your friends, so they can request songs and sing along.
 This repo is hardcoded with my own prersonal playlist, but feel free to fork it and override the [songlist json data](/src/data/songList.json) with your own!
 
+Here's my crawler you can use : [Ultimate guitar crawler](https://github.com/NoctalIvan/ultimate-guitar-crawler)
+
 This project is mainly training for [Scaleway](https://careers.scaleway.com/la-maison/)'s interview.
 
 ## Available Scripts
