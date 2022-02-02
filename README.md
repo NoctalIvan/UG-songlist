@@ -5,6 +5,8 @@ This repo is hardcoded with my own prersonal playlist, but feel free to fork it 
 
 This project is mainly training for [Scaleway](https://careers.scaleway.com/la-maison/)'s interview.
 
+| edit: I got the job :)
+
 ## Available Scripts
 
 In the project directory, you can run:
