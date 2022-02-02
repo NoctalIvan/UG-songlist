@@ -19,10 +19,10 @@ test('songFilter', () => {
 })
 
 test('songSort', () => {
-    expect(songSort(songs, {field: 'artist', direction: -1}).map(song => song.id)).toStrictEqual([2,1,3])
-    expect(songSort(songs, {field: 'artist', direction: 1}).map(song => song.id)).toStrictEqual([3,1,2])
-    expect(songSort(songs, {field: 'title', direction: -1}).map(song => song.id)).toStrictEqual([3,2,1])
-    expect(songSort(songs, {field: 'title', direction: 1}).map(song => song.id)).toStrictEqual([1,2,3])
+    expect(songSort(songs, {field: 'band_name', direction: -1}).map(song => song.id)).toStrictEqual([2,1,3])
+    expect(songSort(songs, {field: 'band_name', direction: 1}).map(song => song.id)).toStrictEqual([3,1,2])
+    expect(songSort(songs, {field: 'song_name', direction: -1}).map(song => song.id)).toStrictEqual([3,2,1])
+    expect(songSort(songs, {field: 'song_name', direction: 1}).map(song => song.id)).toStrictEqual([1,2,3])
 })
 
 test('paginate', () => {

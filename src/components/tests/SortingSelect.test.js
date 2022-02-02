@@ -4,14 +4,14 @@ import SortingSelect from '../SortingSelect';
 import expect from 'expect'
 
 test('renders', async () => {
-    const sortingSelect = await render(<SortingSelect value={{field: 'title', direction: 1}}/>);
+    const sortingSelect = await render(<SortingSelect value={{field: 'song_name', direction: 1}}/>);
     const selects = await sortingSelect.container.getElementsByClassName('MuiInputBase-root')
     expect(selects.length).toBe(1)
     expect(selects[0].firstChild.innerHTML).toBe('Title ▲')
 });
 
 test('renders with artist down', async () => {
-    const sortingSelect = await render(<SortingSelect value={{field: 'artist', direction: -1}}/>);
+    const sortingSelect = await render(<SortingSelect value={{field: 'band_name', direction: -1}}/>);
     const select = await sortingSelect.container.getElementsByClassName('MuiInputBase-root')[0]
     expect(select.firstChild.innerHTML).toBe('Artist ▼')
 });
@@ -22,9 +22,9 @@ test('on change', async () => {
         changeValue = value
     }
 
-    const sortingSelect = await render(<SortingSelect value={{field: 'artist', direction: -1}} onChange={onChange}/>);
+    const sortingSelect = await render(<SortingSelect value={{field: 'band_name', direction: -1}} onChange={onChange}/>);
     const select = await sortingSelect.container.getElementsByClassName('MuiInputBase-root')[0]
 
     fireEvent.change(select.children[1], {target: {value: 'title_down'}})
-    expect(changeValue).toStrictEqual({ field: 'title', direction: -1 })
+    expect(changeValue).toStrictEqual({ field: 'song_name', direction: -1 })
 })

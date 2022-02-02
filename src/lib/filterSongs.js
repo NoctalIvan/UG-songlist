@@ -1,7 +1,7 @@
 import normalizeStr from './normalizeString'
 
 export const songFilter = (song, filter) => {
-    return normalizeStr(song.title).includes(filter) || normalizeStr(song.artist).toLowerCase().includes(filter)
+    return normalizeStr(song.song_name).includes(filter) || normalizeStr(song.band_name).toLowerCase().includes(filter)
 }
 
 export const songSort = (songs, sort) => {

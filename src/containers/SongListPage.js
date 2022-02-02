@@ -24,7 +24,7 @@ class SongListPage extends Component {
                 chill: true
             },
             sort: {
-                field: 'artist',
+                field: 'band_name',
                 direction: 1
             },
             page: 1
