@@ -7,6 +7,8 @@ Here's my crawler you can use : [Ultimate guitar crawler](https://github.com/Noc
 
 This project is mainly training for [Scaleway](https://careers.scaleway.com/la-maison/)'s interview.
 
+> edit: I got the job :)
+
 ## Available Scripts
 
 In the project directory, you can run:
